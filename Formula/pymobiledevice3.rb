@@ -3,8 +3,8 @@ class Pymobiledevice3 < Formula
   
     desc "Pure python3 implementation for working with iDevices (iPhone, etc...)."
     homepage "https://github.com/doronz88/pymobiledevice3"
-    url "https://files.pythonhosted.org/packages/39/a4/240973e04f9a39800d6286bdc69f6ede71832d3fe62cc8a2d95b1ba8dbec/pymobiledevice3-2.43.5.tar.gz"
-    sha256 "72a74811953f317b2437d17697cc5e9c2be7eb40219ff3c5ee5fd642e7c63dd2"
+    url "https://files.pythonhosted.org/packages/63/ad/8aca9da67111f7e6a3c12bf9adecbc2ee21d8147a97a79f10e8aba0736a4/pymobiledevice3-2.43.6.tar.gz"
+    sha256 "56c66f8760fe67705cd239315951b4a2d0ac00c8b3c55d87a9190a3265d83877"
 
     depends_on "python@3.11"
 
