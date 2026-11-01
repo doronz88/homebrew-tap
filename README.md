@@ -4,6 +4,7 @@ doronz88's Homebrew Formulas and Casks
 
 ```sh
 brew tap doronz88/tap
+brew trust doronz88/tap   # recent Homebrew versions require trusting third-party taps
 ```
 
 | Name | Type | Install |
