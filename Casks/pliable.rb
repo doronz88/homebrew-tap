@@ -1,6 +1,6 @@
 cask "pliable" do
-  version "1.0.1"
-  sha256 "9ad4e41a7feeaeb7543cb31a6148987e7d34e48cf7301526486c22e9dbb3ad9a"
+  version "1.1.1"
+  sha256 "814f557588f4286c606f3df1b984e8959d8510696c0dc32f06eb205533c32b0a"
 
   url "https://github.com/doronz88/Pliable/releases/download/v#{version}/Pliable-#{version}.zip"
   name "Pliable"
