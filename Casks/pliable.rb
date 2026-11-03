@@ -16,14 +16,17 @@ cask "pliable" do
 
   app "Pliable.app"
 
+  # Ad-hoc signed and not notarized: clear the quarantine flag so macOS opens it without the
+  # "cannot be opened" dialog.
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Pliable.app"],
+        writable_paths: ["{{appdir}}/Pliable.app"],
+        must_succeed:   false
+  end
+
   zap trash: [
     "~/Library/Preferences/com.doronz88.Pliable.plist",
     "~/Library/Saved Application State/com.doronz88.Pliable.savedState",
   ]
-
-  caveats <<~EOS
-    Pliable is ad-hoc signed and not notarized. If macOS refuses to open it, allow it in
-    System Settings > Privacy & Security, or run:
-      xattr -dr com.apple.quarantine #{appdir}/Pliable.app
-  EOS
 end
