@@ -10,3 +10,4 @@ brew trust doronz88/tap   # recent Homebrew versions require trusting third-part
 | Name | Type | Install |
 |---|---|---|
 | [Pliable](https://github.com/doronz88/Pliable) | Cask | `brew install --cask doronz88/tap/pliable` |
+| [ConvertZ](https://github.com/doronz88/ConvertZ) | Cask | `brew install --cask doronz88/tap/convertz` |
